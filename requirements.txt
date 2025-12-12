@@ -1,0 +1,7 @@
+google-genai
+click
+python-dotenv
+requests
+ruff
+tqdm
+
