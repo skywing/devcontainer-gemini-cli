@@ -36,8 +36,9 @@ The Gemini CLI requires your API key. For security, it's best practice to pass t
 Use the following command structure to execute any Gemini CLI command inside the container.
 
 ```bash
- podman run \
+ podman run -it \
   -e GEMINI_API_KEY="YOUR_GEMINI_API_KEY" \
+  -v "$(pwd)":/home/aidev/workspace \
   [YOUR_DOCKER_IMAGE_NAME] \
-  -it /bin/bash
+  /bin/bash
 ```
